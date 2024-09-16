@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="867b1ecf-0210-4452-b5fd-98743b2602e8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +38,8 @@
     "Python.Test.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/joaop/Documents/GitHub/DetectFy/DetectFy-ppi",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/joaop/Documents/GitHub/DetectFy",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -142,6 +143,7 @@
       <updated>1725929001783</updated>
       <workItem from="1725929014242" duration="7221000" />
       <workItem from="1726440033250" duration="697000" />
+      <workItem from="1726442215989" duration="558000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

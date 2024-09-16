@@ -1,7 +1,7 @@
 import os
 
 # Define o caminho completo do arquivo
-file_path = '20181109/user1/user1-1-1-1-5-r4.dat'
+file_path = '20181109'
 
 # Verifica se o arquivo existe
 if os.path.exists(file_path):
@@ -38,7 +38,7 @@ if len(dataset) >= 500:
     # Faz o plot das amostras
     plt.figure(figsize=(10, 6))
     plt.plot(samples)
-    plt.title('Plot das 10000 amostras iniciais')
+    plt.title('Plot das 10000 amostras iniciaissss')
     plt.xlabel('Amostra')
     plt.ylabel('Valor')
     plt.grid(True)
