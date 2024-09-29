@@ -1,7 +1,7 @@
 import os
 
 # Define o caminho completo do arquivo
-file_path = '20181109'
+file_path = 20181109
 
 # Verifica se o arquivo existe
 if os.path.exists(file_path):

@@ -30,7 +30,7 @@ def clean_data(X):
 base_dir = "20181109"
 
 # Lista de usuários
-usuarios = ['user1', 'user2', 'user3']  # Ajuste conforme os usuários reais
+usuarios = ['user1', 'user2', 'user3']  # Três usuários
 
 # Quantidade de arquivos por usuário
 num_files_per_user = 10
@@ -51,7 +51,7 @@ for user_idx, user in enumerate(usuarios):
         file_path = os.path.join(user_dir, dat_file)
         data = load_dat_file(file_path, target_size=target_size)
         X.append(data)
-        Y.append(1 if user_idx == 0 else 0)  # Ajuste a etiqueta conforme necessário
+        Y.append(user_idx)  # Ajuste para atribuir um rótulo único a cada usuário (0, 1, 2)
 
 # Converter para arrays numpy
 X = np.array(X)
@@ -90,11 +90,13 @@ X_pca = pca.fit_transform(X)
 plt.figure(figsize=(10, 7))
 plt.scatter(X_pca[Y == 0, 0], X_pca[Y == 0, 1], color='red', label='Usuário 0')
 plt.scatter(X_pca[Y == 1, 0], X_pca[Y == 1, 1], color='blue', label='Usuário 1')
+plt.scatter(X_pca[Y == 2, 0], X_pca[Y == 2, 1], color='orange', label='Usuário 2')
 
 # Adicionar previsões do SVM
 X_test_pca = pca.transform(X_test)
 plt.scatter(X_test_pca[y_pred == 0, 0], X_test_pca[y_pred == 0, 1], color='green', marker='x', label='Predições Usuário 0', alpha=0.5)
 plt.scatter(X_test_pca[y_pred == 1, 0], X_test_pca[y_pred == 1, 1], color='purple', marker='x', label='Predições Usuário 1', alpha=0.5)
+plt.scatter(X_test_pca[y_pred == 2, 0], X_test_pca[y_pred == 2, 1], color='yellow', marker='x', label='Predições Usuário 2', alpha=0.5)
 
 plt.title('Visualização do SVM com PCA (2D)')
 plt.xlabel('Componente Principal 1')
